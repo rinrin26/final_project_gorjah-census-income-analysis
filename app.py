@@ -16,7 +16,7 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 
 # HTML header
 html_temp = """
-<div style="background-color:#000;padding:10px;border-radius:10px width:100%">
+<div style="background-color:#87CEEB;padding:15px;border-radius:10px; width:100%">
     <h1 style="color:#fff;text-align:center">Census Income Prediction</h1> 
     <h4 style="color:#fff;text-align:center">Predict whether income >50K or <=50K</h4> 
 </div>
@@ -138,4 +138,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
