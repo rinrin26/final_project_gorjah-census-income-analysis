@@ -20,7 +20,8 @@ html_temp = """
 .header-container {
     background-color: #A3CEF1; /* warna soft pastel */
     padding: 20px;
-    width: 1020px; /* lebar layar */
+    width: 5000px; /* lebar layar */
+    height: 200px;
     margin-left: -3rem; /* hilangkan padding default Streamlit */
     margin-right: -3rem;
     border-radius: 0px;
@@ -167,6 +168,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
