@@ -16,12 +16,41 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 
 # HTML header
 html_temp = """
-<div style="background-color:#A3CEF1; padding:15px; border-radius:0px; width:100vw; height:120px; margin-left:-3rem; margin-right:-3rem;">
-    <h1 style="color:#fff; text-align:center; margin:0;">Census Income Prediction</h1> 
-    <h4 style="color:#fff; text-align:center; margin:0;">Predict whether income >50K or <=50K</h4> 
+<style>
+.header-container {
+    background-color: #A3CEF1; /* warna soft pastel */
+    padding: 20px;
+    width: 100vw; /* penuh layar */
+    margin-left: -3rem; /* hilangkan padding default Streamlit */
+    margin-right: -3rem;
+    border-radius: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.header-container h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+}
+.header-container h4 {
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+</style>
+
+<div class="header-container">
+    <h1>Census Income Prediction</h1>
+    <h4>Predict whether income >50K or <=50K</h4>
 </div>
 """
 
+# """
+# <div style="background-color:#A3CEF1; padding:15px; border-radius:0px; width:100vw; height:120px; margin-left:-3rem; margin-right:-3rem;">
+#     <h1 style="color:#fff; text-align:center; margin:0;">Census Income Prediction</h1> 
+#     <h4 style="color:#fff; text-align:center; margin:0;">Predict whether income >50K or <=50K</h4> 
+# </div>
+# """
 desc_temp = """
 ### About  
 This app predicts whether an individual's income is **>50K** or **<=50K** based on US Census data.  
@@ -138,6 +167,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
