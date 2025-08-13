@@ -158,7 +158,8 @@ def predict_income(capital_gain, capital_loss, race, gender, native_country,
 
 # Main app
 def main():
-    stc.html(html_temp)
+    # stc.html(html_temp)
+    st.markdown(html_temp, unsafe_allow_html=True)
     menu = ["Home", "Prediction"]
     choice = st.sidebar.selectbox("Menu", menu)
 
@@ -170,6 +171,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
