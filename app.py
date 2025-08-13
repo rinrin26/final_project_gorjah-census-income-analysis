@@ -185,6 +185,7 @@ def main():
     # stc.html(html_temp, height=220)
     st.markdown(html_temp, unsafe_allow_html=True)
     menu = ["Home", "Prediction"]
+    st.subheader("Final Project Gorjah Team")
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
@@ -195,6 +196,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
