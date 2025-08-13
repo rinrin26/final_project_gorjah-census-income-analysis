@@ -15,38 +15,37 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 # booster.load_model("model.json")
 
 # HTML header
-html_temp = """
-<style>
-.header-container {
-    background-color: #A3CEF1; /* warna soft pastel */
-    padding: 20px;
-    width: 100%; /* lebar layar */
-    height: 200px;
-    margin-left: -3rem; 
-    margin-right: -3rem;
-    border-radius: 0px;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0;
-    position: relative;
-    left: 0;
-}
-.header-container h1 {
-    color: white;
-    margin: 0;
-    font-size: 2rem;
-}
-.header-container h4 {
-    color: white;
-    margin: 0;
-    font-weight: normal;
-}
-</style>
-
-<div class="header-container">
-    <h1>Census Income Prediction</h1>
-    <h4>Predict whether income >50K or <=50K</h4>
-</div>
+html_temp = """<style>
+    .header-container {
+        background-color: #A3CEF1; /* warna soft pastel */
+        padding: 20px;
+        width: 100%; /* lebar layar */
+        height: 200px;
+        margin-left: -3rem; 
+        margin-right: -3rem;
+        border-radius: 0px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        left: 0;
+    }
+    .header-container h1 {
+        color: white;
+        margin: 0;
+        font-size: 2rem;
+    }
+    .header-container h4 {
+        color: white;
+        margin: 0;
+        font-weight: normal;
+    }
+    </style>
+    
+    <div class="header-container">
+        <h1>Census Income Prediction</h1>
+        <h4>Predict whether income >50K or <=50K</h4>
+    </div>
 """
 
 # """
@@ -171,6 +170,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
