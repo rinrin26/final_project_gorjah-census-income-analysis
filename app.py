@@ -16,6 +16,12 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 
 # HTML header
 html_temp = """<style>
+    .block-container {
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
     .header-container {
         background-color: #A3CEF1; /* warna soft pastel */
         padding: 20px;
@@ -31,12 +37,12 @@ html_temp = """<style>
         left: 0;
     }
     .header-container h1 {
-        color: white;
+        color: black;
         margin: 0;
         font-size: 2rem;
     }
     .header-container h4 {
-        color: white;
+        color: black;
         margin: 0;
         font-weight: normal;
     }
@@ -170,6 +176,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
