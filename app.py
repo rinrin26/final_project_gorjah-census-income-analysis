@@ -15,36 +15,68 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 # booster.load_model("model.json")
 
 # HTML header
-html_temp = """
-<style>
-.header-container {
-    background-color: #A3CEF1; /* warna soft pastel */
-    padding: 20px;
-    width: 100vw; /* lebar layar */
-    height: 200px;
-    margin-left: -3rem; 
-    margin-right: -3rem;
-    border-radius: 0px;
-    box-sizing: border-box;
-    text-align: center;
-}
-.header-container h1 {
-    color: white;
-    margin: 0;
-    font-size: 2rem;
-}
-.header-container h4 {
-    color: white;
-    margin: 0;
-    font-weight: normal;
-}
-</style>
-
-<div class="header-container">
-    <h1>Census Income Prediction</h1>
-    <h4>Predict whether income >50K or <=50K</h4>
-</div>
+html_temp = """ 
+ <div className="min-h-screen bg-background">
+      {/* Full-width blue header with inline styles */}
+      <div style={{
+        backgroundColor: '#A3CEF1',
+        color: 'white',
+        width: '100vw',
+        marginLeft: 'calc(-50vw + 50%)',
+        marginRight: 'calc(-50vw + 50%)',
+        padding: '48px 16px',
+        textAlign: 'center'
+      }}>
+        <div style={{ maxWidth: '64rem', margin: '0 auto' }}>
+          <h1 style={{ 
+            fontSize: '3rem', 
+            fontWeight: 'bold', 
+            marginBottom: '16px',
+            margin: '0 0 16px 0'
+          }}>
+            Census Income Prediction
+          </h1>
+          <h4 style={{ 
+            fontSize: '1.25rem', 
+            fontWeight: '300', 
+            opacity: '0.95',
+            margin: '0'
+          }}>
+            Predict whether income &gt;50K or &lt;=50K
+          </h4>
+        </div>
+      </div>
 """
+# """
+# <style>
+# .header-container {
+#     background-color: #A3CEF1; /* warna soft pastel */
+#     padding: 20px;
+#     width: 100vw; /* lebar layar */
+#     height: 200px;
+#     margin-left: -3rem; 
+#     margin-right: -3rem;
+#     border-radius: 0px;
+#     box-sizing: border-box;
+#     text-align: center;
+# }
+# .header-container h1 {
+#     color: white;
+#     margin: 0;
+#     font-size: 2rem;
+# }
+# .header-container h4 {
+#     color: white;
+#     margin: 0;
+#     font-weight: normal;
+# }
+# </style>
+
+# <div class="header-container">
+#     <h1>Census Income Prediction</h1>
+#     <h4>Predict whether income >50K or <=50K</h4>
+# </div>
+# """
 
 # """
 # <div style="background-color:#A3CEF1; padding:15px; border-radius:0px; width:100vw; height:120px; margin-left:-3rem; margin-right:-3rem;">
@@ -168,6 +200,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
