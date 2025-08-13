@@ -134,7 +134,7 @@ def run_ml_app():
         }
     
         st.subheader("Input Summary")
-        st.table(input_data)
+        st.table(input_data, use_container_width=False)
 
 # Function untuk proses input and predict
 def predict_income(capital_gain, capital_loss, race, gender, native_country,
@@ -193,6 +193,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
