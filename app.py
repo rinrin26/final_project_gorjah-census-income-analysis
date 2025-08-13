@@ -15,45 +15,47 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 # booster.load_model("model.json")
 
 # HTML header
-html_temp = """<style>
-    .block-container {
-            padding-left: 0rem;
-            padding-right: 0rem;
-        }
-    .header-container {
-            background-color: #A3CEF1;
-            padding: 20px;
-            width: 100vw; /* full lebar layar */
-            height: 200px;
-            border-radius: 0px;
-            text-align: center;
-            position: relative;
-            left: 0;
-    }
-    .header-container h1 {
-        color: black;
-        margin: 0;
-        font-size: 2rem;
-    }
-    .header-container h4 {
-        color: black;
-        margin: 0;
-        font-weight: normal;
-    }
-    </style>
-    
-    <div class="header-container">
-        <h1>Census Income Prediction</h1>
-        <h4>Predict whether income >50K or <=50K</h4>
-    </div>
+html_temp ="""
+<div style="background-color:#A3CEF1; padding:15px; border-radius:0px; width:100vw; height:120px; margin-left:-3rem; margin-right:-3rem;">
+    <h1 style="color:#fff; text-align:center; margin:0;">Census Income Prediction</h1> 
+    <h4 style="color:#fff; text-align:center; margin:0;">Predict whether income >50K or <=50K</h4> 
+</div>
 """
 
+# """<style>
+#     .block-container {
+#             padding-left: 0rem;
+#             padding-right: 0rem;
+#         }
+#     .header-container {
+#             background-color: #A3CEF1;
+#             padding: 20px;
+#             width: 100vw; /* full lebar layar */
+#             height: 200px;
+#             border-radius: 0px;
+#             text-align: center;
+#             position: relative;
+#             left: 0;
+#     }
+#     .header-container h1 {
+#         color: black;
+#         margin: 0;
+#         font-size: 2rem;
+#     }
+#     .header-container h4 {
+#         color: black;
+#         margin: 0;
+#         font-weight: normal;
+#     }
+#     </style>
+    
+#     <div class="header-container">
+#         <h1>Census Income Prediction</h1>
+#         <h4>Predict whether income >50K or <=50K</h4>
+#     </div>
 # """
-# <div style="background-color:#A3CEF1; padding:15px; border-radius:0px; width:100vw; height:120px; margin-left:-3rem; margin-right:-3rem;">
-#     <h1 style="color:#fff; text-align:center; margin:0;">Census Income Prediction</h1> 
-#     <h4 style="color:#fff; text-align:center; margin:0;">Predict whether income >50K or <=50K</h4> 
-# </div>
-# """
+
+
 desc_temp = """
 ### About  
 This app predicts whether an individual's income is **>50K** or **<=50K** based on US Census data.  
@@ -158,8 +160,8 @@ def predict_income(capital_gain, capital_loss, race, gender, native_country,
 
 # Main app
 def main():
-    stc.html(html_temp, height=220)
-    # st.markdown(html_temp, unsafe_allow_html=True)
+    # stc.html(html_temp, height=220)
+    st.markdown(html_temp, unsafe_allow_html=True)
     menu = ["Home", "Prediction"]
     choice = st.sidebar.selectbox("Menu", menu)
 
@@ -171,6 +173,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
