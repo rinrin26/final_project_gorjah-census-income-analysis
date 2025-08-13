@@ -115,6 +115,26 @@ def run_ml_app():
             st.success("✅ Predicted Income: >50K")
         else:
             st.error("⚠️ Predicted Income: <=50K")
+            
+        # Data input ditampilkan dalam tabel
+        input_data = {
+            "Age": [age],
+            "Final Weight": [final_weight],
+            "Education Num": [education_num],
+            "Hours/Week": [hours_per_week],
+            "Workclass": [workclass],
+            "Marital Status": [marital_status],
+            "Occupation": [occupation],
+            "Relationship": [relationship],
+            "Race": [race],
+            "Gender": [gender],
+            "Native Country": [native_country],
+            "Capital Gain": [capital_gain],
+            "Capital Loss": [capital_loss]
+        }
+    
+        st.subheader("Input Summary")
+        st.table(input_data)
 
 # Function untuk proses input and predict
 def predict_income(capital_gain, capital_loss, race, gender, native_country,
@@ -173,6 +193,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
