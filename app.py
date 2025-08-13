@@ -15,8 +15,7 @@ with open('best_model_pipeline_model_xgb.pkl', 'rb') as file:
 # booster.load_model("model.json")
 
 # HTML header
-html_temp = 
-"""
+html_temp = """
 <style>
 .header-container {
     background-color: #A3CEF1; /* warna soft pastel */
@@ -172,6 +171,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
