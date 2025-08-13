@@ -134,7 +134,7 @@ def run_ml_app():
         }
     
         st.subheader("Input Summary")
-        st.dataframe(df_input, use_container_width=False)
+        st.dataframe(input_data, use_container_width=False)
         # st.table(input_data, use_container_width=False)
 
 
@@ -195,6 +195,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
